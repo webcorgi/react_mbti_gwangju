@@ -168,11 +168,12 @@ main {
 .chart__box {
     border:2px solid var(--default-color5);
     border-radius: 10px;
-    padding: 26px 30px;
+    padding: 20px 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 14px;
+    height:195px;
 }
 
 .chart__list {
@@ -266,7 +267,6 @@ main {
 }
 .content__box2 a p b {
     font-weight: bold;
-    margin-top: 10px;
     display: block;
 }
 .content__box2 .btn_intro {
@@ -340,6 +340,7 @@ main {
     position: relative;
     top:-15px;
     font-weight: bold;
+    padding-top: 5px;
 }
 .survey__list .qa .q {
     font-weight: bold;
@@ -350,7 +351,7 @@ main {
     display: flex;
     justify-self: flex-start;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .survey__list label:last-child {
     margin-bottom: 0;
@@ -368,3 +369,182 @@ main {
 .survey__list label input:checked+.fakeRadio {
     background: var(--default-color2);
 }
+
+.result {
+    background: var(--sub-color2);
+    padding-top: 50px;
+}
+.result .tit__big {
+    font-size: 130px;
+    color:#333;
+    opacity: 0.1;
+    font-weight: bold;
+    position: relative;
+    top: 55px;
+    z-index: 0;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    z-index: 0;
+    position: relative;
+}
+.contents>div:first-child {
+    width:100%;
+}
+.content__result {
+    background: #fff;
+    box-shadow:var(--shadow);
+    z-index: 1;
+}
+
+nav {
+    width:120px;
+    margin-left: 50px;
+}
+nav>*{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    background: #fff;
+    border:1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition-duration:.2s;
+}
+nav>*:hover {
+    box-shadow:var(--shadow);
+}
+nav>* img {
+    width:77px;
+}
+.result__inner {
+    max-width:500px;
+    margin:0 auto;
+    padding:50px 10px;
+    text-align:center;
+}
+.result__inner img {
+    width:100%;
+}
+.result__inner .tit-top {
+    font-size:27px;
+    padding-bottom: 25px;
+}
+.result__inner .tit-resulttype {
+    font-size:44px;
+    font-weight: bold;
+    padding:40px 0;
+}
+.result__inner .hashtagbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.result__inner .hashtagbox .hashtag {
+    height:50px;
+    width:100%;
+    border:1px solid var(--default-color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+.result__inner .hashtagbox .hashtag:nth-child(1){
+    border:1px solid var(--default-color3)
+}
+.result__inner .hashtagbox .hashtag:nth-child(2){
+    border:1px solid var(--default-color2)
+}
+.result__inner .hashtagbox .hashtag:nth-child(3){
+    border:1px solid var(--default-color5)
+}
+.result__inner hr {
+    height:0;
+    border: 0;
+    border-bottom:1px solid #ddd;
+    margin:60px 0;
+}
+.result__inner h3.tit-mark {
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.result__inner .type-detail {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.result__inner .tit-circle {
+    font-size:44px;
+    font-weight:bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.result__inner .tit-circle:before {
+    content:'';
+    display: inline-block;
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    background: var(--default-color1);
+    position: absolute;
+    top:-20px;
+    left:-20px;
+    z-index: -1;
+}
+.result__inner .tit-circle.bage:before {
+    background: var(--sub-color5);
+}
+.result__inner .course-name {
+    font-size:30px;
+    padding-bottom: 10px;
+}
+
+.result__inner .imgbox {
+    margin:20px 0;
+}
+
+.course__items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+    margin-bottom: 65px;
+}
+.course__items .item h5 {
+    font-weight: bold;
+}
+.course__items .item .tit-place {
+    font-size:20px;
+    font-weight: 300;
+    position: relative;
+    top: 10px;
+}
+
+.course__items .item .tit-sub {
+
+}
+.course__items .item h6 {
+    font-size:24px;
+    font-weight: bold;
+}
+
+.wrapper__share {
+    width:340px;
+}
+.wrapper__share h6 {}
+.wrapper__share .share {}
+.wrapper__share .share button {}
+.wrapper__share .share button img {}
+.wrapper__share .share button img {}
