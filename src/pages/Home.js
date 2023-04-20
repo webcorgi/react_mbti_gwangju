@@ -10,8 +10,6 @@ import logo from 'img/logo_symbol.png'
 import imgKo from 'img/img_ko.png'
 import { Link } from "react-router-dom";
 function Home() {
-
-
     return (
     <>
         <Plane />
@@ -70,43 +68,43 @@ function Home() {
                         </div>
                     </div>
                     <div className="box__chart">
-                        <h3>
+                        <h3 className="tit-mark">
                             <span>응시자</span>
                             <b>32,608명</b>
                         </h3>
                         <div className="chart__box">
                             <div id="chart">
-                                <img src={imgChart} alt="chart" />
+                                <img src={imgChart} alt="chart" style={{width:'139px'}} />
                             </div>
-                            <ul>
+                            <ul className="chart__list">
                                 <li>
-                                    <div className="dot"></div>
+                                    <div className="dot dot1"></div>
                                     <div className="percent">38%</div>
                                     <p>공룡알빵 제빵사</p>
                                 </li>
                                 <li>
-                                    <div className="dot"></div>
+                                    <div className="dot dot2"></div>
                                     <div className="percent">22%</div>
                                     <p>헌책방거리 점원</p>
                                 </li>
                                 <li>
-                                    <div className="dot"></div>
+                                    <div className="dot dot3"></div>
                                     <div className="percent">16%</div>
                                     <p>무등산 수박농부</p>
                                 </li>
                                 <li>
-                                    <div className="dot"></div>
+                                    <div className="dot dot4"></div>
                                     <div className="percent">13%</div>
                                     <p>광주 100만 유투버</p>
                                 </li>
                             </ul>
                         </div>
-                        <div className="btn">
+                        <Link to="/types" className="btn">
                             <span>전체 MBTI 유형 보기</span>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="content__box">
+                <div className="content__box2">
                     <Link to="/intro" className="btn_intro">
                         <img src={icoIntro} alt="intro" />
                         <p>
@@ -121,19 +119,20 @@ function Home() {
                             <b>추천여행</b>
                         </p>
                     </Link>
-                    <Link to="/trip" className="btn_gwangju">
+                    <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank" className="btn_gwangju">
                         <img src={logo} alt="logo" />
                         <p>
                             <span>광주광역시 동구</span>
                             <b>문화관광</b>
                         </p>
-                    </Link>
+                    </a>
                     <a href="javascript:;" className="btn_lang">
                         <img src={imgKo} alt="intro" />
                         <p>한국어</p>
                     </a>
                 </div>
             </div>
+            <div className="btmBg"></div>
         </main>
     </>
     );

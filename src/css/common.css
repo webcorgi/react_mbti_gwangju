@@ -32,7 +32,7 @@ body * {
     --default-color4:#43C2D8;
     --default-color5:#ECB547;
     --sub-color1:#C8FCFF;
-    --sub-color2:#D7FFD1;
+    --sub-color2:#F9FFF8;
     --sub-color3:#9AABD8;
     --sub-color4:#88C7D8;
     --sub-color5:#F1EFC3;
@@ -50,8 +50,10 @@ body * {
     height: 85px;
     transition-duration:.2s;
 }
+*[class^="btn_"]:hover,
 .btn:hover {
     opacity: .85;
+    transition-duration:.2s;
 }
 .btn span {
     color:#fff;
@@ -127,4 +129,31 @@ body * {
 .tit p.hashtag {
     font-size: 20px;
     font-weight: 300;
+}
+footer {
+    position: relative;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 40px 0;
+}
+footer .logo__link {
+    position: absolute;
+    left:0;
+    top:-10px;
+}
+footer .logo__link img {
+    height: 39px;
+}
+footer p {
+    font-size:14px;
+}
+
+.btmBg {
+    height: 361px;
+    background: url(../img/btm_bg.png) bottom /contain no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
