@@ -13,6 +13,9 @@ import ScrollTop from 'include/ScrollTop';
 import Footer from 'include/Footer';
 import Test from 'pages/Test';
 import Result from 'pages/Result';
+import Intro from 'pages/Intro';
+import Types from 'pages/Types';
+import Trip from 'pages/Trip';
 
 
 function App() {
@@ -22,9 +25,11 @@ function App() {
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} exact={true} />
-        <Route path="/test" element={<Test />} /> 
-        <Route path="/result" element={<Result />} /> 
-        {/* <Route path="/trip" element={<Trip />} />  */}
+        <Route path="/test" element={<Test />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/intro" element={<Intro />} />
+        <Route path="/types" element={<Types />} />
+        <Route path="/trip" element={<Trip />} />
         {/* <Route path="/trip" element={<Test />} />  */}
       </Routes>
       <Footer />

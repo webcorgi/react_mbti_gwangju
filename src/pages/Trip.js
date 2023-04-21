@@ -1,0 +1,54 @@
+import React from 'react';
+import logo from 'img/logo_symbol.png'
+import btnBack from 'img/btn_back.png'
+import imgMbti from 'img/sample1.png'
+import { Link } from 'react-router-dom';
+import icoHome from 'img/ico_3d_home.png'
+import icoSearch from 'img/ico_search.png'
+import imgtype from 'img/sample1.png'
+
+
+function Trip() {
+    return (
+        <div className="Trip">
+            <header className='subHeader'>
+                <div className="wrapper">
+                    <a href="javascript:history.back()" className='btn-back'>
+                        <img src={btnBack} alt="back" />
+                    </a>
+                    <div className='text'>
+                        <img src={logo} alt="logo" />
+                        <h1>모든 여행 스타일 유형 보기</h1>
+                    </div>
+                </div>
+                <div className="ani-circles2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+
+            <div className="contents wrapper sub">
+                <div className="contents__trip">
+                    
+                </div>
+                <nav>
+                    <Link to="/">
+                        <img src={icoHome} alt="home"/>
+                    </Link>
+                    <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank">
+                        광주광역시<br/>
+                        동구 문화관광
+                    </a>
+                    <Link to="/types">전체유형</Link>
+                    <button>한국어</button>
+                </nav>
+            </div>
+            <div className="btmBg"></div>
+        </div>
+    );
+}
+
+export default Trip;

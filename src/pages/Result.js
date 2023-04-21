@@ -11,6 +11,7 @@ import share from 'img/share.png'
 function Result() {
     return (
         <div className="result">
+            
             <div className="wrapper">
                 <h1 className='tit__big'>나의 여행 스타일은?</h1>
                 <div className="contents">
@@ -133,7 +134,7 @@ function Result() {
                                         <img src={share} alt="share" />
                                     </button>
                                 </div>
-                                <Link to="/test" className='btn retry'><span>다시하기</span></Link>
+                                <Link to="/test" className='btn mini retry'><span>다시하기</span></Link>
                             </div>
                         </div>
                     </div>
@@ -149,6 +150,14 @@ function Result() {
                         <button>한국어</button>
                     </nav>
                 </div>
+            </div>
+            <div className="ani-circles">
+                <span className='ani_on_circle'></span>
+                <span className='ani_on_circle2'></span>
+                <span className='ani_on_circle3'></span>
+                <span className='ani_on_circle'></span>
+                <span className='ani_on_circle2'></span>
+                <span className='ani_on_circle3'></span>
             </div>
         </div>
     );
