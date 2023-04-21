@@ -9,7 +9,7 @@ function Test() {
                     <div className="tit">
                         <h1>광주광역시 동구</h1>
                         <h2>
-                            <span class="underline">여행 스타일</span>
+                            <span className="underline">여행 스타일</span>
                             <span>테스트</span>
                         </h2>
                         <p className="subtext">나의 성향에 맞춰 떠나보는 광주 여행!</p>

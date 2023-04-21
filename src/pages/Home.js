@@ -9,6 +9,8 @@ import icoTrip from 'img/ico_3d_backpack.png'
 import logo from 'img/logo_symbol.png'
 import imgKo from 'img/img_ko.png'
 import { Link } from "react-router-dom";
+import sample from 'img/sample1.png'
+
 function Home() {
     return (
     <>
@@ -21,7 +23,7 @@ function Home() {
                         <div className="tit">
                             <h1>광주광역시 동구</h1>
                             <h2>
-                                <span class="underline">여행 스타일</span>
+                                <span className="underline">여행 스타일</span>
                                 <span>테스트</span>
                             </h2>
                             <p className="subtext">나의 성향에 맞춰 떠나보는 광주 여행!</p>
@@ -32,7 +34,9 @@ function Home() {
                             <span>테스트 시작하기</span>
                         </Link>
                     </div>
-                    <div className="visual__image"></div>
+                    <div className="visual__image">
+                        <img src={sample} alt="" />
+                    </div>
                 </div>
             </div>
             <div className="mid_bg">
@@ -126,7 +130,7 @@ function Home() {
                             <b>문화관광</b>
                         </p>
                     </a>
-                    <a href="javascript:;" className="btn_lang">
+                    <a href="#" className="btn_lang">
                         <img src={imgKo} alt="intro" />
                         <p>한국어</p>
                     </a>

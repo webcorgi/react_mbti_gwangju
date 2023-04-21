@@ -16,6 +16,7 @@ import Result from 'pages/Result';
 import Intro from 'pages/Intro';
 import Types from 'pages/Types';
 import Trip from 'pages/Trip';
+import Detail from 'pages/Detail';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <Route path="/intro" element={<Intro />} />
         <Route path="/types" element={<Types />} />
         <Route path="/trip" element={<Trip />} />
-        {/* <Route path="/trip" element={<Test />} />  */}
+        <Route path="/detail" element={<Detail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

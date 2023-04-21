@@ -10,9 +10,9 @@ function Intro() {
         <div className="intro">
             <header className='subHeader'>
                 <div className="wrapper">
-                    <a href="javascript:history.back()" className='btn-back'>
+                <Link onClick={() => this.goBack()} className='btn-back'>
                         <img src={btnBack} alt="back" />
-                    </a>
+                    </Link>
                     <div className='text'>
                         <img src={logo} alt="logo" />
                         <h1>광주광역시 동구 여행 스타일 테스트란?</h1>

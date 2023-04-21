@@ -13,9 +13,9 @@ function Types() {
         <div className="Types">
             <header className='subHeader'>
                 <div className="wrapper">
-                    <a href="javascript:history.back()" className='btn-back'>
+                    <Link onClick={() => this.goBack()} className='btn-back'>
                         <img src={btnBack} alt="back" />
-                    </a>
+                    </Link>
                     <div className='text'>
                         <img src={logo} alt="logo" />
                         <h1>모든 여행 스타일 유형 보기</h1>

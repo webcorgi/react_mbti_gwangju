@@ -39,6 +39,12 @@ body * {
     --sub-color5:#F1EFC3;
     --shadow:0 0 40px rgba(0,0,0,0.05);
 }
+select {
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */
+}
+
 .btn {
     position: relative;
     background: var(--default-color2);
@@ -137,6 +143,7 @@ footer {
     text-align: center;
     border-top: 1px solid #ddd;
     padding: 40px 0;
+    background: #fff;
 }
 footer .logo__link {
     position: absolute;
@@ -153,7 +160,7 @@ footer p {
 .btmBg {
     height: 361px;
     background: url(../img/btm_bg.png) bottom /contain no-repeat;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -162,3 +169,4 @@ footer p {
 .h80 {
     height:80px !important;
 }
+
