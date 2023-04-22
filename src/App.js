@@ -22,7 +22,7 @@ import Detail from 'pages/Detail';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} exact={true} />
