@@ -1,5 +1,6 @@
 import React from 'react';
 import ico3DModeling from 'img/ico_3d_modeling.png'
+import { Link } from 'react-router-dom';
 
 function Test() {
     return (
@@ -94,9 +95,9 @@ function Test() {
                         </div>
                     </li>
                 </ul>
-                <button className='btn wrapper'>
+                <Link to='/result' className='btn wrapper'>
                     <span>다음 페이지 ( 1/5 )</span>
-                </button>
+                </Link>
             </div>
         </div>
     );

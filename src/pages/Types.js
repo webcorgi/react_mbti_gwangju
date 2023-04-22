@@ -1,19 +1,19 @@
 import React from 'react';
 import logo from 'img/logo_symbol.png'
 import btnBack from 'img/btn_back.png'
-import imgMbti from 'img/sample1.png'
-import { Link } from 'react-router-dom';
-import icoHome from 'img/ico_3d_home.png'
+import { Link, useNavigate } from 'react-router-dom';
 import icoSearch from 'img/ico_search.png'
 import imgtype from 'img/sample1.png'
+import Nav from 'include/Nav';
 
 
 function Types() {
+    const navigate = useNavigate();
     return (
         <div className="Types">
             <header className='subHeader'>
                 <div className="wrapper">
-                    <Link onClick={() => this.goBack()} className='btn-back'>
+                    <Link onClick={() => navigate(-1)} className='btn-back'>
                         <img src={btnBack} alt="back" />
                     </Link>
                     <div className='text'>
@@ -104,17 +104,7 @@ function Types() {
                         </div>
                     </div>
                 </div>
-                <nav>
-                    <Link to="/">
-                        <img src={icoHome} alt="home"/>
-                    </Link>
-                    <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank">
-                        광주광역시<br/>
-                        동구 문화관광
-                    </a>
-                    <Link to="/types">전체유형</Link>
-                    <button>한국어</button>
-                </nav>
+                <Nav />
             </div>
             <div className="btmBg"></div>
         </div>

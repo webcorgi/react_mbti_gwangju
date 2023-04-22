@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from 'img/logo_symbol.png'
 import btnBack from 'img/btn_back.png'
-import imgMbti from 'img/sample1.png'
-import { Link } from 'react-router-dom';
-import icoHome from 'img/ico_3d_home.png'
-import icoSearch from 'img/ico_search.png'
-import imgtype from 'img/sample1.png'
+import { Link, useNavigate } from 'react-router-dom';
 import imgSearch from 'img/ico_search.png'
 import imgPlace from 'img/sample1.png'
 import imgFirst from 'img/first.png'
 import imgPrev from 'img/prev.png'
 import imgNext from 'img/next.png'
 import imgLast from 'img/last.png'
+import Nav from 'include/Nav';
 
 function Trip() {
+    const navigate = useNavigate();
     return (
         <div className="Trip">
             <header className='subHeader'>
                 <div className="wrapper">
-                    <Link onClick={() => this.goBack()} className='btn-back'>
+                    <Link onClick={() => navigate(-1)} className='btn-back'>
                         <img src={btnBack} alt="back" />
                     </Link>
                     <div className='text'>
@@ -72,7 +70,7 @@ function Trip() {
                         <p>총 10건의 추천 여행지가 있습니다.</p>
                     </div>
 
-                    <div className="item">
+                    <Link to="/detail" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -83,8 +81,8 @@ function Trip() {
                                 관광지설명관광지설명관광지설명관광지설명관광지설명관광
                             </p>
                         </div>
-                    </div>
-                    <div className="item">
+                    </Link>
+                    <Link to="/detail" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -95,8 +93,8 @@ function Trip() {
                                 관광지설명관광지설명관광지설명관광지설명관광지설명관광
                             </p>
                         </div>
-                    </div>
-                    <div className="item">
+                    </Link>
+                    <Link to="/detail" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -107,8 +105,8 @@ function Trip() {
                                 관광지설명관광지설명관광지설명관광지설명관광지설명관광
                             </p>
                         </div>
-                    </div>
-                    <div className="item">
+                    </Link>
+                    <Link to="/detail" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -119,8 +117,8 @@ function Trip() {
                                 관광지설명관광지설명관광지설명관광지설명관광지설명관광
                             </p>
                         </div>
-                    </div>
-                    <div className="item">
+                    </Link>
+                    <Link to="/detail" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -131,7 +129,7 @@ function Trip() {
                                 관광지설명관광지설명관광지설명관광지설명관광지설명관광
                             </p>
                         </div>
-                    </div>
+                    </Link>
 
                     <div className="paging">
                         <button className='first'>
@@ -156,17 +154,7 @@ function Trip() {
 
                     </div>
                 </div>
-                <nav>
-                    <Link to="/">
-                        <img src={icoHome} alt="home"/>
-                    </Link>
-                    <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank">
-                        광주광역시<br/>
-                        동구 문화관광
-                    </a>
-                    <Link to="/types">전체유형</Link>
-                    <button>한국어</button>
-                </nav>
+                <Nav />
             </div>
             <div className="btmBg"></div>
         </div>

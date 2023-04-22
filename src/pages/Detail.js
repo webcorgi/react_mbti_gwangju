@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import logo from 'img/logo_symbol.png'
 import btnBack from 'img/btn_back.png'
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import icoHome from 'img/ico_3d_home.png'
 import prevIcon from 'img/slidePrev.png'
 import nextIcon from 'img/slideNext.png'
@@ -13,6 +13,7 @@ import imgLocation from 'img/location.png'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Nav from 'include/Nav';
 
 function Detail() {
     const [swiper, setSwiper] = useState(null);
@@ -39,12 +40,13 @@ function Detail() {
         onSwiper: setSwiper,
         onSlideChange: (e) => setMainImageIndex(e.activeIndex)
     };
+    const navigate = useNavigate();
 
     return (
         <div className="Trip">
             <header className='subHeader'>
                 <div className="wrapper">
-                    <Link onClick={() => this.goBack()} className='btn-back'>
+                    <Link onClick={() => navigate(-1)} className='btn-back'>
                         <img src={btnBack} alt="back"/>
                     </Link>
                     <div className='text'>
@@ -116,17 +118,7 @@ function Detail() {
                         <span>자세히 알아보기</span>
                     </button>
                 </div>
-                <nav>
-                    <Link to="/">
-                        <img src={icoHome} alt="home"/>
-                    </Link>
-                    <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank">
-                        광주광역시<br/>
-                        동구 문화관광
-                    </a>
-                    <Link to="/types">전체유형</Link>
-                    <button>한국어</button>
-                </nav>
+                <Nav />
             </div>
             <div className="btmBg"></div>
         </div>
