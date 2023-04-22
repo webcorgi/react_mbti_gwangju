@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://webcorgi.github.io/react_mbti_gwangju/static/css/main.c65f3f87.css",
+    "main.css": "https://webcorgi.github.io/react_mbti_gwangju/static/css/main.65e0dce7.css",
     "main.js": "https://webcorgi.github.io/react_mbti_gwangju/static/js/main.0b4a13f0.js",
     "static/js/787.a30e5475.chunk.js": "https://webcorgi.github.io/react_mbti_gwangju/static/js/787.a30e5475.chunk.js",
     "static/media/GmarketSansTTFBold.ttf": "https://webcorgi.github.io/react_mbti_gwangju/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
@@ -17,12 +17,12 @@
     "static/media/head_logo.png": "https://webcorgi.github.io/react_mbti_gwangju/static/media/head_logo.e8ad29f3e5854363eece.png",
     "static/media/ico_3d_backpack.png": "https://webcorgi.github.io/react_mbti_gwangju/static/media/ico_3d_backpack.fd6e9e0374ca91b04522.png",
     "index.html": "https://webcorgi.github.io/react_mbti_gwangju/index.html",
-    "main.c65f3f87.css.map": "https://webcorgi.github.io/react_mbti_gwangju/static/css/main.c65f3f87.css.map",
+    "main.65e0dce7.css.map": "https://webcorgi.github.io/react_mbti_gwangju/static/css/main.65e0dce7.css.map",
     "main.0b4a13f0.js.map": "https://webcorgi.github.io/react_mbti_gwangju/static/js/main.0b4a13f0.js.map",
     "787.a30e5475.chunk.js.map": "https://webcorgi.github.io/react_mbti_gwangju/static/js/787.a30e5475.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c65f3f87.css",
+    "static/css/main.65e0dce7.css",
     "static/js/main.0b4a13f0.js"
   ]
 }
