@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import icoHome from 'img/ico_3d_home.png'
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import sample from 'img/sample1.png'
 import kakao from 'img/kakao.png'
 import facebook from 'img/facebook.png'
 import twitter from 'img/twitter.png'
 import insta from 'img/insta.png'
 import share from 'img/share.png'
+import Nav from 'include/Nav';
+
+let currentPath = "";
 
 function Result() {
+   
+    
     return (
         <div className="result">
             
@@ -74,15 +79,15 @@ function Result() {
 
                             <div className="course__items">
                                 <div className="item">
-                                    <div className="imgbox">
+                                    <Link to="/detail" className="imgbox">
                                         <img src={sample} alt="course"/>
-                                    </div>
+                                    </Link>
                                     <h5>남도 관광안내센터</h5>
                                 </div>
                                 <div className="item">
-                                    <div className="imgbox">
+                                    <Link to="/detail" className="imgbox">
                                         <img src={sample} alt="course"/>
-                                    </div>
+                                    </Link>
                                     <h5>무등 현대미술관</h5>
                                 </div>
                             </div>
@@ -96,18 +101,18 @@ function Result() {
 
                             <div className="course__items">
                                 <div className="item">
-                                    <p className='tit-place'>남도 관광안내센터</p>
-                                    <div className="imgbox">
+                                    <p className='tit-place'>최고의 메이트</p>
+                                    <Link to="/result" className="imgbox" onClick={() => window.scrollTo(0, 0)}>
                                         <img src={sample} alt="course"/>
-                                    </div>
+                                    </Link>
                                     <p className='tit-sub'>뭐든 할 수 있다구!</p>
                                     <h6>공룡알빵 제빵사</h6>
                                 </div>
                                 <div className="item">
-                                <p className='tit-place'>무등 현대미술관</p>
-                                    <div className="imgbox">
+                                <p className='tit-place'>최악의 메이트</p>
+                                    <Link to="/result" className="imgbox" onClick={() => window.scrollTo(0, 0)}>
                                         <img src={sample} alt="course"/>
-                                    </div>
+                                    </Link>
                                     <p className='tit-sub'>마음의 정화가 필요해</p>
                                     <h6>헌책방거리 점원</h6>
                                 </div>
@@ -138,17 +143,7 @@ function Result() {
                             </div>
                         </div>
                     </div>
-                    <nav>
-                        <Link to="/">
-                            <img src={icoHome} alt="home"/>
-                        </Link>
-                        <a href="https://www.donggu.kr/index.es?sid=a9" target="_blank">
-                            광주광역시<br/>
-                            동구 문화관광
-                        </a>
-                        <Link to="/types">전체유형</Link>
-                        <button>한국어</button>
-                    </nav>
+                    <Nav />
                 </div>
             </div>
             <div className="ani-circles">

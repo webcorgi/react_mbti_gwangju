@@ -1,6 +1,63 @@
 @charset "utf-8";
 
 @media screen and (max-width:1200px){
+    .content__box2 a p span,
+    .content__box2 a p b {
+        font-size:14px;
+    }
+    
+    .subHeader .btn-back {
+        left: 20px;
+    }
+    .subHeader .btn-back img {
+        width:35px;
+    }
+    .subHeader .text {
+        padding-left: 60px;
+    }
+    .nav_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: fixed;
+        top:0;
+        right:0;
+        height:100vh;
+    }
+    .btn_nav{
+        display: block;
+        width:50px;
+        height:140px;
+        background: #fff;
+        border:1px solid #333;
+        border-right: 0;
+        z-index: 100;
+        font-size:25px;
+        border-radius: 10px 0 0 10px;
+        position: relative;
+        right:-2px;
+        top:20%;
+    }
+    .btn_nav:hover {
+        opacity: 1;
+    }
+    
+    nav {
+        top:0;
+        right:0;
+        z-index: 10;
+        background: #fff;
+        height:100vh;
+        padding: 20px;
+        width:;
+        margin-left: 0;
+        border-left:1px solid #333;
+        padding: 10px;
+        width:140px;
+    }
+    nav> * {
+        border:0;
+    }
     .visual__info {
         padding:110px 40px;
     }
@@ -29,12 +86,6 @@
     }
     .result .tit__big {
         font-size:70px;
-    }
-    nav {
-        position: fixed;
-        top:20px;
-        right:10px;
-        z-index: 10;
     }
     .result .tit__big {
         top:15px;
@@ -196,10 +247,23 @@
         width:70px;
         height:70px;
         font-size:9px;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
     }
     nav img {
-        width:40px;
+        width:30px;
+        height:30px;
+    }
+    nav>*:hover {
+        box-shadow:none;
+        border:0;
+    }
+    .selectFlag.type2{
+        padding-top: 8px;
+    }
+    .selectFlag.type2 .viewAll button {
+        width:70px;
+        height:70px;
+        margin-right: 0;
     }
     .result .tit__big {
         font-size:30px;
@@ -401,14 +465,5 @@
     }
     .detailHashtag span {
         margin-bottom: 10px;
-    }
-    .subHeader .btn-back {
-        left: 20px;
-    }
-    .subHeader .btn-back img {
-        width:35px;
-    }
-    .subHeader .text {
-        padding-left: 60px;
     }
 }

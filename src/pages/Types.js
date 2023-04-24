@@ -7,8 +7,33 @@ import imgtype from 'img/sample1.png'
 import Nav from 'include/Nav';
 
 
+const items = [
+    {id:0},
+    {id:1},
+    {id:2},
+    {id:3},
+    {id:4},
+    {id:5},
+    {id:6},
+    {id:7},
+    {id:8},
+    {id:9}
+]
+
 function Types() {
     const navigate = useNavigate();
+
+    const Items = () =>
+        items.map(() =>
+            <Link className="item" to="/result">
+                <div className="img">
+                    <img src={imgtype} alt="" />
+                </div>
+                <h2>무등산 수박농부</h2>
+                <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
+            </Link>
+        )
+
     return (
         <div className="Types">
             <header className='subHeader'>
@@ -39,69 +64,7 @@ function Types() {
                         </button>
                     </div>
                     <div className="types__items">
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
-                        <div className="item">
-                            <div className="img">
-                                <img src={imgtype} alt="" />
-                            </div>
-                            <h2>무등산 수박농부</h2>
-                            <p className='hashtag'>#만능재주꾼 #효율코패스 #체험여행 #압축여행</p>
-                        </div>
+                        <Items />
                     </div>
                 </div>
                 <Nav />

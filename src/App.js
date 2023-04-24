@@ -21,11 +21,13 @@ import Detail from 'pages/Detail';
 
 function App() {
 
+
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    //  basename={process.env.PUBLIC_URL}
+    <BrowserRouter basename={'/react_mbti_gwangju'}>
       <ScrollTop />
       <Routes>
-        <Route path="/" element={<Home />} exact={true} />
+        <Route path="/" element={<Home />} exact />
         <Route path="/test" element={<Test />} />
         <Route path="/result" element={<Result />} />
         <Route path="/intro" element={<Intro />} />

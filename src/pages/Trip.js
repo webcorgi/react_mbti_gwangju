@@ -59,12 +59,37 @@ function Trip() {
                         <div className="selects">
                             <select name="" id="">
                                 <option value="">여행 스타일</option>
+                                <option value="">무등산 수박농부</option>
+                                <option value="">광주 역사학자</option>
+                                <option value="">광주 100만 유투버</option>
+                                <option value="">ACC 무용가</option>
+                                <option value="">헌책방거리 서점원</option>
+                                <option value="">너릿재 조경사</option>
+                                <option value="">동구 관광 매니저</option>
+                                <option value="">충장축제 기획가</option>
+                                <option value="">충장로 인디가수</option>
+                                <option value="">예술의 거리 화가</option>
+                                <option value="">야시장 푸드파이터</option>
+                                <option value="">K-POP 스타의 거리 댄서</option>
+                                <option value="">5.18 주먹밥 요리사</option>
+                                <option value="">춘설차 다도 선생님</option>
+                                <option value="">동명동 바리스타</option>
                             </select>
                             <select name="" id="">
                                 <option value="">여행 동기</option>
+                                <option value="">재미와 추억</option>
+                                <option value="">호기심 충족</option>
+                                <option value="">액티비티와 모험</option>
+                                <option value="">스트레스 해소</option>
+                                <option value="">친구, 가족과 함께</option>
+                                <option value="">새로운 만남</option>
                             </select>
                             <select name="" id="">
-                                <option value="">여행 속성</option>
+                                <option value="">여행지 속성</option>
+                                <option value="">핫플</option>
+                                <option value="">자연자원</option>
+                                <option value="">문화체험</option>
+                                <option value="">행사&#183;이벤트</option>
                             </select>
                         </div>
                         <p>총 10건의 추천 여행지가 있습니다.</p>

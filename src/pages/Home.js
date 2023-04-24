@@ -10,6 +10,7 @@ import logo from 'img/logo_symbol.png'
 import imgKo from 'img/img_ko.png'
 import { Link } from "react-router-dom";
 import sample from 'img/sample1.png'
+import SelectFlag from "include/SelectFlag";
 
 function Home() {
     return (
@@ -51,7 +52,7 @@ function Home() {
                             <b>관광지는 ?</b>
                         </h3>
                         <div className="wrapper__most">
-                            <div className="most">
+                            <Link to="/result" className="most">
                                 <div className="most__img">
                                     <img src={imgFirst} alt="1위 관광지" />
                                 </div>
@@ -59,8 +60,8 @@ function Home() {
                                     <span className="mark">1위</span>
                                     <strong>공룡알빵 제빵사</strong>
                                 </div>
-                            </div>
-                            <div className="most">
+                            </Link>
+                            <Link to="/result" className="most">
                                 <div className="most__img">
                                     <img src={imgSecond} alt="2위 관광지" />
                                 </div>
@@ -68,7 +69,7 @@ function Home() {
                                     <span className="mark">2위</span>
                                     <strong>헌책방거리 점원</strong>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="box__chart">
@@ -130,10 +131,9 @@ function Home() {
                             <b>문화관광</b>
                         </p>
                     </a>
-                    <a href="#" className="btn_lang">
-                        <img src={imgKo} alt="intro" />
-                        <p>한국어</p>
-                    </a>
+                    <div className="btn_lang">
+                        <SelectFlag type={'main'} />
+                    </div>
                 </div>
             </div>
             <div className="btmBg"></div>
