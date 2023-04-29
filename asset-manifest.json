@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_mbti_gwangju/static/css/main.a8138dfc.css",
+    "main.css": "/react_mbti_gwangju/static/css/main.35c66e2a.css",
     "main.js": "/react_mbti_gwangju/static/js/main.e47b1580.js",
     "static/js/787.a30e5475.chunk.js": "/react_mbti_gwangju/static/js/787.a30e5475.chunk.js",
     "static/media/GmarketSansTTFBold.ttf": "/react_mbti_gwangju/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
@@ -10,6 +10,7 @@
     "static/media/GmarketSansTTFBold.woff": "/react_mbti_gwangju/static/media/GmarketSansTTFBold.92299230fa7026b752cb.woff",
     "static/media/GmarketSansTTFMedium.woff": "/react_mbti_gwangju/static/media/GmarketSansTTFMedium.c441bbe11105e62d9be7.woff",
     "static/media/GmarketSansTTFLight.woff": "/react_mbti_gwangju/static/media/GmarketSansTTFLight.f3787517e506710aeb16.woff",
+    "static/media/mbit_bg.png": "/react_mbti_gwangju/static/media/mbit_bg.241083a155ef1e82545e.png",
     "static/media/BMJUA.woff": "/react_mbti_gwangju/static/media/BMJUA.29efbafcabed35ceecf5.woff",
     "static/media/mbti_main.png": "/react_mbti_gwangju/static/media/mbti_main.9d8b56b2fbf01c0995c5.png",
     "static/media/sample2.png": "/react_mbti_gwangju/static/media/sample2.4b1b0e4bee1fcef00381.png",
@@ -24,12 +25,12 @@
     "static/media/ico_3d_backpack.png": "/react_mbti_gwangju/static/media/ico_3d_backpack.fd6e9e0374ca91b04522.png",
     "static/media/ico_3d_types.png": "/react_mbti_gwangju/static/media/ico_3d_types.9cc381d0c77140a4c2de.png",
     "index.html": "/react_mbti_gwangju/index.html",
-    "main.a8138dfc.css.map": "/react_mbti_gwangju/static/css/main.a8138dfc.css.map",
+    "main.35c66e2a.css.map": "/react_mbti_gwangju/static/css/main.35c66e2a.css.map",
     "main.e47b1580.js.map": "/react_mbti_gwangju/static/js/main.e47b1580.js.map",
     "787.a30e5475.chunk.js.map": "/react_mbti_gwangju/static/js/787.a30e5475.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8138dfc.css",
+    "static/css/main.35c66e2a.css",
     "static/js/main.e47b1580.js"
   ]
 }
