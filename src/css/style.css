@@ -595,7 +595,7 @@ nav>* img {
     height:300px;
     overflow:hidden;
     border-radius:30px;
-    border:1px solid #eee;
+    background: url(../img/mbit_bg.png) 50% /cover no-repeat;
 }
 .result__inner .imgmbtibox img {
     width:100%;
