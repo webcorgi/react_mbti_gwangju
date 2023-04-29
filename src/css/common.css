@@ -18,9 +18,15 @@
     src: url(font/GmarketSansTTFBold.woff) format("woff"),
          url(font/GmarketSansTTFBold.ttf) format("truetype");
 }
+@font-face {
+    font-family: "BMJUA";
+    font-weight: 500;
+    src: url(font/BMJUA.woff) format("woff"),
+         url(font/BMJUA.ttf) format("truetype");
+}
 body * {
-    font-family: "GmarketSans", sans-serif;
-    font-size: 17px;
+    font-family: "BMJUA", sans-serif;
+    font-size: 20px;
     color:#333;
     font-weight: 500;
     line-height: 1.4;
@@ -28,10 +34,11 @@ body * {
 
 :root {
     --default-color1:#7EE76E;
-    --default-color2:#59B74B;
+    --default-color2:#6ED1B3;
     --default-color3:#3388BD;
     --default-color4:#43C2D8;
     --default-color5:#ECB547;
+    --default-color6: #0A9D68;
     --sub-color1:#C8FCFF;
     --sub-color2:#F9FFF8;
     --sub-color3:#9AABD8;
@@ -66,12 +73,12 @@ select {
 .btn span {
     color:#fff;
     font-size: 24px;
-    font-weight: bold;
+    
     position: relative;
     top: 2px;
 }
 .btn.mini span {
-    font-size: 17px;
+    font-size: 27px;
 }
 .btn:before {
     content:'';
@@ -102,7 +109,7 @@ select {
 .tit {}
 .tit h1 {
     font-size: 34px;
-    font-weight: bold;
+    
 }
 .tit h2 {
     display: flex;
@@ -113,7 +120,6 @@ select {
 .tit h2 span {
     position: relative;
     display: inline-block;
-    font-weight: bold;
     font-size: 50px;
 }
 .tit h2 span.underline {
@@ -133,22 +139,24 @@ select {
 }
 .tit p.subtext {
     font-size: 20px;
+    font-family: "GmarketSans", sans-serif;
 }
 .tit p.hashtag {
     font-size: 20px;
     font-weight: 300;
+    font-family: "GmarketSans", sans-serif;
 }
 footer {
     position: relative;
     text-align: center;
     border-top: 1px solid #ddd;
-    padding: 40px 0;
+    padding: 40px 10px;
     background: #fff;
     z-index: 1;
 }
 footer .logo__link {
     position: absolute;
-    left:0;
+    left:10px;
     top:-10px;
 }
 footer .logo__link img {
@@ -159,13 +167,13 @@ footer p {
 }
 
 .btmBg {
-    height: 361px;
+    /* height: 361px;
     background: url(../img/btm_bg.png) bottom /contain no-repeat;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -1; */
 }
 .h80 {
     height:80px !important;

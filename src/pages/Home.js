@@ -9,8 +9,11 @@ import icoTrip from 'img/ico_3d_backpack.png'
 import logo from 'img/logo_symbol.png'
 import imgKo from 'img/img_ko.png'
 import { Link } from "react-router-dom";
-import sample from 'img/sample1.png'
+import mbtiMain from 'img/mbti_main.png'
 import SelectFlag from "include/SelectFlag";
+import ENFJ from 'img/mbti/ENFJ.png'
+import ISTJ from 'img/mbti/ISTJ.png'
+
 
 function Home() {
     return (
@@ -31,12 +34,11 @@ function Home() {
                             <p className="hashtag">#계획러 #집순이 #미식가</p>
                         </div>
                         <Link to="/test" className="btn big">
-                            <img src={ico3DModeling} alt="" className="ico_3d_modeling" />
                             <span>테스트 시작하기</span>
                         </Link>
                     </div>
                     <div className="visual__image">
-                        <img src={sample} alt="" />
+                        <img src={mbtiMain} alt="" />
                     </div>
                 </div>
             </div>
@@ -48,13 +50,12 @@ function Home() {
                 <div className="content__box">
                     <div className="box__most">
                         <h3 className="tit-mark">
-                            <span>가장 많이 나온 유형이 본</span>
-                            <b>관광지는 ?</b>
+                            <span>가장 많이 나온 유형은 ?</span>
                         </h3>
                         <div className="wrapper__most">
                             <Link to="/result" className="most">
                                 <div className="most__img">
-                                    <img src={imgFirst} alt="1위 관광지" />
+                                    <img src={ENFJ} alt="1위 관광지" />
                                 </div>
                                 <div className="most__text">
                                     <span className="mark">1위</span>
@@ -63,7 +64,7 @@ function Home() {
                             </Link>
                             <Link to="/result" className="most">
                                 <div className="most__img">
-                                    <img src={imgSecond} alt="2위 관광지" />
+                                    <img src={ISTJ} alt="2위 관광지" />
                                 </div>
                                 <div className="most__text">
                                     <span className="mark">2위</span>
