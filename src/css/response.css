@@ -107,6 +107,31 @@
     .ani-circles {
         display: none;
     }
+    .leftNav {
+        max-width:none;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .leftNav a {
+        width:50%;
+        padding:10px 5px;
+        border-bottom:1px solid #ddd;
+        background-image: none !important;
+        padding-left: 20px;
+    }
+    .leftNav a:nth-child(odd){
+        border-right:1px solid #ddd;
+    }
+    .contents{
+        display: block;
+    }
+    .subHeader .text h1 {
+        word-break:keep-all;
+    }
+    .formbox .addimg_outer {
+        flex-wrap:wrap;
+    }
 }
 
 
