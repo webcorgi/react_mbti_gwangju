@@ -18,23 +18,23 @@ function SelectFlag({type}) {
 
     return (
         <div className={`selectFlag ${type=='main'?'type1':'type2'} ${viewSelect?'active':''}`}>
-            <div className={viewSelect&&'viewAll'}>
-                <button className={selected=='ko'&&'selected'} onClick={() => clickbtn('ko')}>
+            <div className={viewSelect?'viewAll':''}>
+                <button className={selected=='ko'?'selected':''} onClick={() => clickbtn('ko')}>
                     <img src={imgKorea} alt="korea"/>
                     <span>KO</span>
                 </button>
-                <button className={selected=='ch'&&'selected'} onClick={() => clickbtn('ch')}>
+                {/* <button className={selected=='ch'?'selected':''} onClick={() => clickbtn('ch')}>
                     <img src={imgChina} alt="china"/>
                     <span>CH</span>
-                </button>
-                <button className={selected=='en'&&'selected'} onClick={() => clickbtn('en')}>
+                </button> */}
+                <button className={selected=='en'?'selected':''} onClick={() => clickbtn('en')}>
                     <img src={imgUsa} alt="english"/>
                     <span>EN</span>
                 </button>
-                <button className={selected=='jp'&&'selected'} onClick={() => clickbtn('jp')}>
+                {/* <button className={selected=='jp'?'selected':''} onClick={() => clickbtn('jp')}>
                     <img src={imgJapan} alt="japan"/>
                     <span>JP</span>
-                </button>
+                </button> */}
             </div>
         </div>
     );
