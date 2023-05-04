@@ -505,4 +505,20 @@
     .course__items .item h5{
         font-size:17px
     }
+    .paging button {
+        width: 100%;
+    }
+    .paging .num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        min-width:55%;
+    }
+    .contents__trip .location span {
+        font-size:14px;
+    }
+    .detailHashtag {
+        flex-wrap:wrap;
+    }
 }
