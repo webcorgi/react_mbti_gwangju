@@ -132,6 +132,16 @@
     .formbox .addimg_outer {
         flex-wrap:wrap;
     }
+    .content__box2 .btn_trip {
+        margin-left: 0;
+    }
+    .content__box2 {
+        gap: 20px;
+    }
+    .content__box2 .btn_gwangju {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 
@@ -140,7 +150,6 @@
         font-size:14px;
     }
     .content__box2 {
-        display: block;
     }
     .visual {
         display: block;
@@ -206,11 +215,13 @@
     }
     .chart__box {
         height:auto;
-        display: block;
     }
     #chart {
         text-align: center;
         margin-bottom: 15px;
+    }
+    #chart img {
+        width:80px !important;
     }
     .chart__box {
         padding: 20px 10px;
@@ -228,13 +239,30 @@
         font-size:20px;
     }
     .content__box2 {
-        margin:50px 0
+        margin:50px 0;
+        padding:30px 0 !important;
+        flex-wrap:wrap;
+        gap: 10px;
+    }
+    .content__box2>* img {
+        margin-right: 0;
     }
     .content__box2>* {
-        width:100% !important;
+        width:calc(50% - 5px) !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 0 !important;
+        padding: 0;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+    }
+    .content__box2 .btn_lang {
+        padding-left: 0;
+    }
+    .content__box2>a  p, 
+    .content__box2>a p {
+        margin-top: 5px;
     }
     .btmBg {
         display: none;
@@ -281,7 +309,6 @@
     .test .processbar .text {
         font-size:20px;
     }
-
 
     footer .logo__link {
         position: relative;

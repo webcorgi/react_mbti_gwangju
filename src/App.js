@@ -22,6 +22,7 @@ import Detail from 'pages/Detail';
 function App() {
 
 
+
   return (
     //  basename={process.env.PUBLIC_URL}
     <BrowserRouter basename={'/react_mbti_gwangju'}>

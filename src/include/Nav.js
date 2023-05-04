@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {Link} from 'react-router-dom';
 import icoHome from 'img/ico_3d_home.png'
 import icoGwangju from 'img/logo_symbol.png'
@@ -6,11 +6,21 @@ import icoTypes from 'img/ico_3d_types.png'
 import SelectFlag from './SelectFlag';
 
 function Nav() {
-    const [isShow, setIsShow] = useState(false);
+    const [isShow, setIsShow] = useState(true);
 
     const clickNav = () => {
         setIsShow(isShow==true?false:true)
     }
+    const windowSize = useRef([window.innerWidth, window.innerHeight]);
+
+    useEffect(() => {
+        if( windowSize.current[0] > 1200 ){
+            setIsShow(true)
+        }else{
+            setIsShow(false)
+        }
+    }, []);
+
 
     return (
         <div className='nav_wrapper'>

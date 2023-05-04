@@ -27,6 +27,7 @@ body {
 main {
     position: relative;
     z-index: 1;
+    padding-bottom: 50px;
 }
 
 .visual {
@@ -165,7 +166,7 @@ main {
     height: 210px;
     border: 1px solid #ddd;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     background: #F7FCFF;
 }
 
@@ -490,7 +491,6 @@ main {
 .result {
     background: #FFFFF5;
     padding-top: 50px;
-    overflow-x: hidden;
 }
 
 .result .tit__big {
@@ -1209,9 +1209,9 @@ select {
 
 .contents__trip .list__top .selects select {
     border: 1px solid #999;
-    height: 40px;
+    height: 68px;
     width: 170px;
-    line-height: 40px;
+    line-height: 68px;
     margin-right: 5px;
 }
 
@@ -1362,7 +1362,6 @@ select {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;
 }
 
 .contents__trip .location img {
