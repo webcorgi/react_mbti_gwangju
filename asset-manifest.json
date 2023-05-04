@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_mbti_gwangju/static/css/main.66cb38cb.css",
+    "main.css": "/react_mbti_gwangju/static/css/main.e393a070.css",
     "main.js": "/react_mbti_gwangju/static/js/main.c711d1a0.js",
     "static/js/787.a30e5475.chunk.js": "/react_mbti_gwangju/static/js/787.a30e5475.chunk.js",
     "static/media/GmarketSansTTFBold.ttf": "/react_mbti_gwangju/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
@@ -25,12 +25,12 @@
     "static/media/ico_3d_backpack.png": "/react_mbti_gwangju/static/media/ico_3d_backpack.fd6e9e0374ca91b04522.png",
     "static/media/ico_3d_types.png": "/react_mbti_gwangju/static/media/ico_3d_types.9cc381d0c77140a4c2de.png",
     "index.html": "/react_mbti_gwangju/index.html",
-    "main.66cb38cb.css.map": "/react_mbti_gwangju/static/css/main.66cb38cb.css.map",
+    "main.e393a070.css.map": "/react_mbti_gwangju/static/css/main.e393a070.css.map",
     "main.c711d1a0.js.map": "/react_mbti_gwangju/static/js/main.c711d1a0.js.map",
     "787.a30e5475.chunk.js.map": "/react_mbti_gwangju/static/js/787.a30e5475.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66cb38cb.css",
+    "static/css/main.e393a070.css",
     "static/js/main.c711d1a0.js"
   ]
 }
