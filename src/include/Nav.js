@@ -6,7 +6,7 @@ import icoTypes from 'img/ico_3d_types.png'
 import SelectFlag from './SelectFlag';
 
 function Nav() {
-    const [isShow, setIsShow] = useState(true);
+    const [isShow, setIsShow] = useState(false);
 
     const clickNav = () => {
         setIsShow(isShow==true?false:true)

@@ -96,6 +96,17 @@
     .wrapper__most .most__img {
         height:400px;
     }
+
+    /* start 05-04 */
+    .selectFlag.type1 button {
+        padding: 10px 0;
+    }
+    .content__box2>* {
+        padding: 30px 0 30px 20px;
+    }
+    .ani-circles {
+        display: none;
+    }
 }
 
 
@@ -143,7 +154,7 @@
         height: 60px;
     }
     .btn span {
-        font-size:17px;
+        font-size:17px !important;
     }
     .main__content .content__box h3 * {
         font-size:17px;
@@ -483,5 +494,15 @@
     }
     .detailHashtag span {
         margin-bottom: 10px;
+    }
+    /* start 05-04 */
+    .btn {
+        width: 100%;
+    }
+    .btn span {
+        font-size:17px !important;
+    }
+    .course__items .item h5{
+        font-size:17px
     }
 }
